@@ -62,8 +62,7 @@ export function Form({feedbackType, onFeedbackCanceled,onFeedbackSent }: Props) 
                 type: feedbackType,
                 comment,  // sempre que a varíavel recebimento for igual a varíavel que contem a informação pode-se passar apenas a varíavel.                
                 screenshot: `data:image/png;base64,${screenshotBase64}`
-            });
-            console.log(feedbackType, comment, screenshotBase64);
+            }); 
             onFeedbackSent();
             
         } catch (e) {
